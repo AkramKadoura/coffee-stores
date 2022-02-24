@@ -30,10 +30,8 @@ export default function Home(props) {
 
   const { handleTrackLocation, locationErrorMsg, isFindingLocation } = useTrackLocation();
 
-  console.log({ latLong, locationErrorMsg });
 
   const handleOnBannerBtnClick = () => {
-    console.log('hi banner button');
     handleTrackLocation();
   }
 
